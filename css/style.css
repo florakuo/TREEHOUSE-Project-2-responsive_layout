@@ -1,0 +1,395 @@
+/* ================================= 
+  Base Styles
+==================================== */
+
+* { 
+  box-sizing: border-box;
+}
+  
+body{
+  text-align: center;
+  font-family: 'Raleway', sans-serif;  
+  color: #666666 ;
+  background:#fafafa;
+  line-height:1.5em;
+}
+
+p {
+  font-size:20px;
+  margin-bottom:1.5em;
+  color: #888888	;
+}
+
+h1,
+h2,
+a{
+	font-family: 'Paytone One', sans-serif;
+
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%
+}
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name{
+	font-size: 1.25em;
+	margin:0;
+}
+
+.main-nav {
+	margin: 5px auto;
+}
+
+
+.main-nav li{
+	background-color: #fff;
+	font-size: .95em;
+}
+
+.name,
+.main-nav li a{
+	color: #DDAA00		;
+
+}
+
+.main-nav li,
+.main-fo li {
+	list-style-type:none;
+	margin-top: 5px;
+	margin-left: -45px;
+
+}
+
+.main-fo a,
+.main-nav a{
+	display: block;
+	padding: 10px 10px;/*使name 跟list在同行*/
+    text-align: center;
+    color: #666666;
+
+}
+
+
+
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+.banner {
+	padding: 3.2em 0;
+	margin-bottom: 60px;
+
+}
+
+.col {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+.main-footer {
+	padding: 2em 0;
+	margin-top: 30px; 
+}
+
+/*skill*/
+
+.service {
+	margin-top: 40px;
+
+}
+
+.logo {
+  border:3px solid #DDAA00;
+  border-radius:50%;
+  width:100px;
+  height:100px;
+  line-height:100px;
+  /*margin:0 auto 40px;*/
+  text-align:center;
+  font-size:2em;
+  margin-top: 50px;
+
+  float:left;
+  margin-left:20px;
+  margin-top: -10px;
+}
+
+
+
+ 
+
+.logo::after{
+  font-family: FontAwesome;
+  right: 15px;
+  top: 23px;
+  z-index: 2;
+  width: 20px;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  color: #DDAA00
+}
+
+.skill1::after {
+  content: "\f1c9";
+}
+
+.skill2::after {
+  content: "\f0d0";
+}
+
+.skill3::after {
+  content: "\f108";
+}
+
+/*作品集*/
+.portfoliostyle{
+	background-color:#fff;
+	padding: 2.2em 0;
+	margin-bottom: 60px;
+}
+
+.portfolio{
+  display: -ms-flex;
+  display:flex;
+  max-width:1000px;
+  -ms-flex-pack: distribute;
+  justify-content:space-around;
+  flex-direction: row;
+  flex-wrap:wrap;
+  /*margin:-70px auto;*/
+  font-size:14px;
+  margin: 0 auto;
+}
+
+
+/*footer*/
+
+.main-fo{
+	visibility: hidden;
+}
+
+.name-fo{
+	float: left;
+
+}
+
+.back-top{
+	float: right;
+	font-weight: 700;
+	margin-top: 10px;
+	color: #666666;
+
+
+}
+
+
+
+
+/* ---- Page Elements ---- */
+
+.tagline{
+	font-weight: bold;
+}
+
+.intro {
+	text-align:justify;
+
+}
+
+.anchor{
+  display: block;
+  height: 100px; /*same height as header*/
+  margin-top: -115px; /*same height as header*/
+  visibility: hidden;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+	padding-top:-120px;
+}
+
+
+.name,
+.main-nav li{
+	display: inline-block;
+	background:none;
+	padding: 10px 25px;
+}
+
+/*自我介紹*/
+.profile-pic{
+	float:right;
+	margin-left:20px;
+	margin-top: -30px;
+
+}
+
+/*skill*/
+
+.logo {
+    float: none;
+    margin: 0 auto;
+}
+
+.service-container{
+	display: inline-block;
+	width: 100%;
+}
+
+.service {
+	width: 30%;
+	text-align: center;
+	display: inline-block;
+	padding-right: 5px;
+	padding-left: 5px;
+	vertical-align: top;
+
+}
+
+.service h3,
+.service p {
+	display: inline-block;
+
+
+}
+
+.service h3 {
+    padding-top: 5px;
+}
+
+.service p {
+	width: 100%;
+}
+
+
+
+
+/*作品集*/
+.item {
+	width:47%;
+	margin:10px 10px;
+}
+
+.desc {
+	margin: 15px auto;
+}
+
+/*footer*/
+
+.main-footer {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.main-fo{
+	visibility:visible;	
+	float: right;
+	margin-right: -115px;
+}
+
+.main-fo li{
+	float: left;
+	padding-right: 15px;
+	padding-left:25px;
+
+}
+
+.back-top{
+	visibility: hidden;
+}
+/*----Float ckearfix----*/
+
+.clearfix::after {
+ 	content: "";
+ 	display: block;
+ 	clear: both;
+ }
+}
+
+@media (min-width:1024px) {
+
+body{
+	padding-top: 100px;
+}
+
+.container{
+	position: relative;
+}
+
+.main-header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+
+.main-footer,
+.container {
+	width: 80%;
+	max-width: 1150px;
+	margin: 0 auto;
+}
+
+
+
+.name{
+	float: left;
+}
+
+.main-nav {
+	float: right;
+}
+
+.main-nav li{
+	float: left;
+
+}
+
+.skills {
+	margin:20px auto;
+}
+
+.item {
+  width:32%;
+  margin:5px 5px;
+}
+
+.desc {
+	margin:5px auto;
+}
+
+.profile-pic{
+	margin-top: -50px;
+
+
+}
