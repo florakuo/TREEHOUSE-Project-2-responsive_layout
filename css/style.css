@@ -8,28 +8,35 @@
   
 body{
   text-align: center;
-  font-family: 'Raleway', sans-serif;  
+  font-family: 'Open Sans', sans-serif; 
   color: #666666 ;
   background:#fafafa;
-  line-height:1.5em;
+  line-height:2.5em;
+  font-weight: normal;
+
 }
 
 p {
-  font-size:20px;
   margin-bottom:1.5em;
-  color: #888888	;
+  color: #888888;
+  font-size: 18px;
 }
 
 h1,
 h2,
 a{
-	font-family: 'Paytone One', sans-serif;
+	font-family: 'Anton', sans-serif;
+	font-size: 24px;
 
 }
 
 h2,
 h3 {
 	margin-top: 0;
+}
+
+h3 {
+	font-size: 20px;
 }
 
 a {
@@ -125,14 +132,12 @@ img {
   width:100px;
   height:100px;
   line-height:100px;
-  /*margin:0 auto 40px;*/
   text-align:center;
   font-size:2em;
-  margin-top: 50px;
-
   float:left;
   margin-left:20px;
-  margin-top: -10px;
+  margin-top: -4px;
+
 }
 
 
@@ -236,6 +241,9 @@ img {
 	padding-top:-120px;
 }
 
+.banner {
+	padding-bottom: 150px;
+}
 
 .name,
 .main-nav li{
@@ -389,7 +397,8 @@ body{
 }
 
 .profile-pic{
-	margin-top: -50px;
+	/*margin-top: -50px;*/
+	height: 100%;
 
 
 }
